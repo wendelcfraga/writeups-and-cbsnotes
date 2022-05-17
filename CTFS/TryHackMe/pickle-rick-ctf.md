@@ -1,1 +1,1 @@
-#Pickle Rick - Try Hack Me CTF
+# Pickle Rick - Try Hack Me CTF
