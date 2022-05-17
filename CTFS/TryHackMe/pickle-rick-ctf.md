@@ -6,7 +6,7 @@
 - **Categoria:** Exploração Web.
 - **Nível:** Fácil.
 
-## Passo 1: usar o nmap para saber as portas abertas
+## Passo 1: usando o nmap para obter algumas informações sobre o ip
 
 ```python
  root@kali:~/pickle-rick-ctf# nmap -A -p- 10.10.46.162 -oN nmap.log 
@@ -43,7 +43,7 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 13.43 seconds 
 ```
 
-## Passo 2: analisar o código fonte e enumerar
+## Passo 2: analisando o código fonte e enumerando
 
 ![CTF IMG](https://github.com/wendelfraga/writeups-and-cbsnotes/blob/main/CTFS/TryHackMe/assets/pickle-rick1-ctf.JPG)
 
