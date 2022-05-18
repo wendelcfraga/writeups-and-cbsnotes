@@ -15,3 +15,7 @@ For Summary -
 - ***We can find the possible hashes of a number by using 2^n where n is the number of bits***
 
 - **Hash's Examples:** **[HASHCAT](https://hashcat.net/wiki/doku.php?id=example_hashes)**
+
+## What is rounds in hash context
+
+- A round consists of several processing steps that include substitution, transposition and mixing of the input plaintext to transform it into the final output of ciphertext. AES uses 128-, 192- or 256-bit keys to encrypt and decrypt data.
