@@ -13,3 +13,5 @@ For Summary -
 
 ## How to know the number of possible hashes for n bits
 - ***We can find the possible hashes of a number by using 2^n where n is the number of bits***
+
+- **Hash's Examples:** **[HASHCAT](https://hashcat.net/wiki/doku.php?id=example_hashes)**
