@@ -30,3 +30,7 @@ wget  https://gitlab.com/kalilinux/packages/hash-identifier/-/raw/kali/master/ha
 ```
 
 - Good site to decrypt hashes: **[HASHES.COM](https://hashes.com/en/decrypt/hash)**
+
+## Others 
+
+- **[John Wordlist Rules](https://www.openwall.com/john/doc/RULES.shtml)** - rules to create and handling wordlists with john.
