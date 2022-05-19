@@ -1,4 +1,4 @@
-# Encoding vs Encryption
+## Encoding vs Encryption
 
 **Encoding** transforms data into another format using a scheme that is publicly available so that it can easily be reversed.
 
