@@ -33,4 +33,5 @@ wget  https://gitlab.com/kalilinux/packages/hash-identifier/-/raw/kali/master/ha
 
 ## Others 
 
-- **[John Wordlist Rules](https://www.openwall.com/john/doc/RULES.shtml)** - rules to create and handling wordlists with john.
+- **[John Wordlist Rules](https://www.openwall.com/john/doc/RULES.shtml)** -> rules to create and handling wordlists with john.
+- **What is Passphrase?** -> A passphrase is similar to a password. However, a password generally refers to something used to authenticate or log into a system. A password generally refers to a secret used to protect an encryption key. Commonly, an actual encryption key is derived from the passphrase and used to encrypt the protected resource.
