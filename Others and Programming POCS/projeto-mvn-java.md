@@ -113,3 +113,33 @@ ENTRYPOINT ["java", "-jar", "arquivo-app.jar"]
   </build> 
 ```
 
+## Scraping JAVA usando JSoup
+
+```java
+File html = new File("./src/main/java/com/wendel/popular-games.html");
+            Document page = Jsoup.parse(html, "UTF-8");
+            Elements primeiro = page.getElementsByTag("tr").next();
+            Element jogo = primeiro.first();
+            String nomeDoJogo = jogo.getElementsByClass("coll-1 name").text();
+            String linkDoJogo = jogo.getElementsByClass("coll-1 name").first()
+                .getElementsByTag("a")
+                .next().attr("href");
+            String autorDoPost = jogo.getElementsByClass("coll-5 uploader").text();
+            
+
+            System.out.println(nomeDoJogo);
+            System.out.println(linkDoJogo);
+            System.out.println(autorDoPost);
+```
+
+## Exemplo conexao application.properties projeto JAVA Spring Boot
+
+```python
+spring.jpa.show-sql=true
+
+spring.datasource.url=jdbc:mysql://localhost:3306/rest-api
+spring.datasource.username=user
+spring.datasource.password=senha12345
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.format_sql=true
+```
