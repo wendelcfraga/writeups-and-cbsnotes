@@ -1,6 +1,6 @@
 ## Como instalar fonte (minecraft) no linux e adicionar no VSCode
 
-**1. Fazer download da fonte** -> [**FONTE MINECRAFT**](https://github.com/IdreesInc/Monocraft/releases); 
+**1. Fazer download da fonte ->** [**FONTE MINECRAFT**](https://github.com/IdreesInc/Monocraft/releases); 
 
 **2.**
 
