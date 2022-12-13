@@ -115,7 +115,7 @@ ENTRYPOINT ["java", "-jar", "arquivo-app.jar"]
 
 ## Scraping JAVA usando JSoup
 
-```java
+```python
 File html = new File("./src/main/java/com/wendel/popular-games.html");
             Document page = Jsoup.parse(html, "UTF-8");
             Elements primeiro = page.getElementsByTag("tr").next();
@@ -132,7 +132,7 @@ File html = new File("./src/main/java/com/wendel/popular-games.html");
             System.out.println(autorDoPost);
 ```
 
-## Exemplo conexao application.properties projeto JAVA Spring Boot
+## Exemplo conexão "application.properties" projeto JAVA Spring Boot
 
 ```python
 spring.jpa.show-sql=true
